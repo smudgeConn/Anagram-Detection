@@ -1,0 +1,13 @@
+// write the function isAnagram
+var isAnagram = function(test, original) {
+//  console.log(test[0])
+  if (test.length != original.length) {
+    return false;
+  } else {
+    for (let i = 0; i < test.length; i++) {
+      if (test.toLowerCase().split("").sort().join("") === original.toLowerCase().split("").sort().join("")) {
+        return true;
+      } return false;
+    }
+  }
+};
